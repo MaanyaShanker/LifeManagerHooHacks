@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "470862698226",
+    "firebase_url": "https://lifemanager-2ff11.firebaseio.com",
+    "project_id": "lifemanager-2ff11",
+    "storage_bucket": "lifemanager-2ff11.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:470862698226:android:c804947bfabb1fb1e1226b",
+        "android_client_info": {
+          "package_name": "traf7.shankermaanya.lifemanager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "470862698226-dq6b9alfkpuqmnbfip46p2rodt30ha9u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "traf7.shankermaanya.lifemanager",
+            "certificate_hash": "af105d56ea0e107e3e281ceeefa144b87974b143"
+          }
+        },
+        {
+          "client_id": "470862698226-ade720c4humk4dnljl5m3pvjeedqdt54.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYlkD1YOS6CGF4Atedt65tteWcnkJErxI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "470862698226-ade720c4humk4dnljl5m3pvjeedqdt54.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

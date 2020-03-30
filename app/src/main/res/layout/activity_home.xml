@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home"
+    android:padding="16dp">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/jobs_recycler_view"
+        android:layout_width="381dp"
+        android:layout_height="713dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/expenses_recycler_view"
+        android:layout_width="381dp"
+        android:layout_height="713dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/goals_recycler_view"
+        android:layout_width="381dp"
+        android:layout_height="713dp"
+        app:layout_constraintTop_toTopOf="parent">
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <Button
+        android:id="@+id/job_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/nav_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="1dp"
+        android:background="@color/yellow"
+        android:onClick="input_job"
+        android:text="Add job"
+        android:textColor="#000" />
+
+    <EditText
+        android:id="@+id/input_job_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/input_job_pay"
+        android:layout_marginBottom="100dp"
+        android:onClick="input_job"
+        android:hint="Job" />
+
+    <EditText
+        android:id="@+id/input_job_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/input_job_hours"
+        android:layout_marginBottom="100dp"
+        android:hint="Pay per hour (Ex: 15)" />
+
+    <EditText
+        android:id="@+id/input_job_hours"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/enter_new_job"
+        android:layout_marginBottom="50dp"
+        android:hint="Hours per week (Ex: 30)" />
+
+    <Button
+        android:id="@+id/enter_new_job"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/nav_view"
+        android:layout_marginBottom="89dp"
+        android:text="Enter"
+        android:onClick="enter_new_job"/>
+
+    <Button
+        android:id="@+id/expenses_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/nav_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="1dp"
+        android:background="@color/yellow"
+        android:onClick="input_expense"
+        android:text="Add bill"
+        android:textColor="#000" />
+
+
+    <EditText
+        android:id="@+id/bill_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bill_amount"
+        android:layout_marginBottom="100dp"
+        android:hint="Expense (Ex: Rent)" />
+
+    <EditText
+        android:id="@+id/bill_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bill_freq"
+        android:layout_marginBottom="100dp"
+        android:hint="Total Amount (Ex: 1000)" />
+
+    <EditText
+        android:id="@+id/bill_freq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/enter_new_bill"
+        android:layout_marginBottom="50dp"
+        android:hint="Frequency in months (Ex: 2)" />
+
+    <Button
+        android:id="@+id/enter_new_bill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/nav_view"
+        android:layout_marginBottom="89dp"
+        android:text="Enter"
+        android:onClick="enter_new_bill"/>
+
+    <TextView
+        android:id="@+id/app_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="#000"
+        android:textSize="@dimen/header_size"
+        android:fontFamily="@font/lobster_regular"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="252dp"
+        android:layout_height="236dp"
+        android:layout_above="@+id/nav_view"
+        android:layout_marginTop="26dp"
+        android:layout_marginBottom="227dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/colored_guy_on_purple_back" />
+
+    <TextView
+        android:id="@+id/welcome_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/nav_view"
+        android:layout_marginBottom="85dp"
+        android:fontFamily="@font/marcellus_regular"
+        android:text="Welcome"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/goal_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/goal_input_money"
+        android:layout_marginBottom="5dp"
+        android:background="@color/yellow"
+        android:onClick="input_goal"
+        android:layout_centerHorizontal="true"
+        android:text="Add Goal"
+        android:textColor="#000" />
+
+    <Button
+        android:id="@+id/goal_input_money"
+        android:layout_width="162dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/nav_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/yellow"
+        android:onClick="input_money_to_goal"
+        android:text="Add Money Towards Goal"
+        android:textColor="#000" />
+
+    <EditText
+        android:id="@+id/input_goal_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/input_goal_amount"
+        android:layout_marginBottom="246dp"
+        android:hint="Goal"
+        android:onClick="input_goal" />
+
+    <EditText
+        android:id="@+id/input_goal_month"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/input_goal_amount"
+        android:layout_marginBottom="152dp"
+        android:hint="The month you want to accomplish this" />
+
+    <EditText
+        android:id="@+id/input_goal_year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/input_goal_amount"
+        android:layout_marginBottom="55dp"
+        android:hint="The year you want to accomplish this" />
+
+    <EditText
+    android:id="@+id/input_goal_amount"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/enter_new_goal"
+    android:layout_marginBottom="50dp"
+    android:hint="Amount needed to achieve goal" />
+
+    <Button
+    android:id="@+id/enter_new_goal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/nav_view"
+    android:layout_marginBottom="89dp"
+    android:text="Enter"
+    android:onClick="enter_new_goal"/>
+
+    <EditText
+        android:id="@+id/input_which_goal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/input_amount_to_goal"
+        android:layout_marginBottom="65dp"
+        android:hint="Which goal do you want to contribute money to? (Ex: 1)" />
+
+    <EditText
+        android:id="@+id/input_amount_to_goal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/enter_money_for_goal"
+        android:layout_marginBottom="114dp"
+        android:hint="How much money do you want to allocate? (Ex: 200)" />
+
+    <Button
+        android:id="@+id/enter_money_for_goal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/nav_view"
+        android:layout_marginBottom="165dp"
+        android:onClick="enter_the_money_for_the_goal"
+        android:text="Enter" />
+
+    <TextView
+        android:id="@+id/expenses_remaining"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/expenses_input"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="11dp"
+        android:fontFamily="@font/marcellus_regular"
+        android:text="Temp Remaining"
+        android:textColor="@color/goal_green"
+        android:textSize="25dp" />
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+
+
+
+</RelativeLayout>

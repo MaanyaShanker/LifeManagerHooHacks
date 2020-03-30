@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#8BE5F5</color>
+    <color name="colorPrimaryDark">#8BE5F5</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="yellow">#F9FFAB</color>
+    <color name="goal_green">#69BE7B</color>
+    <color name="goal_red">#F58B8B</color>
+    <color name="pink">#FFABC8</color>
+    <color name="purple">#CDB2EB</color>
+    <color name="blue">#B7D3FF</color>
+    <color name="tealish">#A9EBDA</color>
+    <color name="green">#BDFCAE</color>
+
+
+</resources>
